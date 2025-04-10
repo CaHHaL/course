@@ -63,7 +63,7 @@ class ChatBot {
 
     async sendMessageToAPI(message) {
         try {
-            const response = await fetch('http://localhost:5000/api/send_message', {
+            const response = await fetch('/api/send_message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
